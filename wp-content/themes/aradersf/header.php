@@ -9,6 +9,8 @@
 
 	<title>
 		   <?php
+		         bloginfo('name');
+		         /*
 		      if (function_exists('is_tag') && is_tag()) {
 		         single_tag_title("Tag Archive for &quot;"); echo '&quot; - '; }
 		      elseif (is_archive()) {
@@ -20,11 +22,12 @@
 		      elseif (is_404()) {
 		         echo 'Not Found - '; }
 		      if (is_home()) {
-		         bloginfo('name'); echo ' - '; bloginfo('description'); }
+		         bloginfo('name'); }
 		      else {
 		          bloginfo('name'); }
 		      if ($paged>1) {
 		         echo ' - page '. $paged; }
+		         */
 		   ?>
 	</title>
 	
