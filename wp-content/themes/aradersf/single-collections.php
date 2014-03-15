@@ -3,11 +3,6 @@
 <?php get_sidebar(); ?>
 		
 		<div class="content-wrap">
-			<div class="back">
-				<?php $term_list = wp_get_post_terms($post->ID, 'selection', array("fields" => "all"));?>
-				<a href="<?php echo bloginfo('url')."/selection/".$term_list[0]->slug?>">< back</a>
-			</div>
-			<div class="hr"></div>
 			<h3><?php the_title()?></h3>
 			<?php the_artist_name($post_object, 'h4', 'By ');?>
 			<?php the_post_entry($post)?>

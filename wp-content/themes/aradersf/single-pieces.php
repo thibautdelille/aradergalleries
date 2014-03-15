@@ -1,31 +1,13 @@
 <?php get_header(); the_post()?>
 		<div class="clear"></div>
-<?php get_sidebar(); ?>
-		
-		<div class="content-wrap">
-			<div class="back">
-				<?php 
-					$collections = get_field('collections');
-					$collection = $collections[0];
-				?>
-				<a href="<?php echo get_permalink($collection->ID)?>">< back</a>
-			</div>
-			<div class="hr"></div>
-			<div class="previous">
-				<?php the_previous($post);?> 
-			</div>
-			<div class="next">
-				<?php the_next($post);?> 
-			</div>
-			<div class="clear"></div>
-			<div class="hr"></div>
+		<div class="fullcontent-wrap">
 			<h3><?php the_title()?></h3>
 			<div class="piece-wrap">
 				<div class="image">
 				<?php
 					$attachment_id = get_field('large_image', $piece->ID);
 					$img = wp_get_attachment_image_src($attachment_id, $size='large', $icon = false);
-					echo '<img src="'.$img[0].'" width="460px"/>';
+					echo '<img src="'.$img[0].'"/>';
 				?>
 				</div>
 				<div class="text">
@@ -40,8 +22,8 @@
 			 }
 			?>
 
-					<div class="clear"></div>
 				</div>
+				<div class="clear"></div>
 				<div class="content">
 					<?php the_content()?>
 				</div>
@@ -59,7 +41,7 @@
 			<div class="elements-wrap">
 				<?php
 					$args = array(
-    					'numberposts' => 3,
+    					'numberposts' => 4,
     					'offset' => 0,
     					'orderby' => 'rand',
     					'order' => 'DESC',

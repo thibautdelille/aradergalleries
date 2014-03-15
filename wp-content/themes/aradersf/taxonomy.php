@@ -3,11 +3,13 @@
 <?php get_sidebar(); ?>
 		
 		<div class="content-wrap">
-			<div class="back">
-				<a href="<?php echo bloginfo('url')?>">< back</a>
-			</div>
-			<div class="hr"></div>
 			<h3><?php echo single_cat_title( '', false )?></h3>
+			<?php 
+			$tax = $wp_query->get_queried_object();
+				if($tax->description!=""){
+					echo '<p>'. $tax->description.'</p>';
+				}
+			?>
 			<div class="hr"></div>
 			<div class="elements-wrap">
 				<?php 

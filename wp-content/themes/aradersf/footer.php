@@ -34,13 +34,13 @@
 &markers=size:mid%7Ccolor:red%7C435+Jackson+Street+San+Francisco,CA&sensor=false"/>
 				</aside>
 				<aside style="margin:0">
-					<p>432 & 435 Jackson Street<br>
+					<p>432 Jackson Street<br>
 					@ Historic Jackson Square<br>
 					San Francisco, CA 94111<br>
 					415-788-5115 </p>
-					<p>Monday - Friday 10 a.m. - 6 p.m.<br>
+					<p>Tuesday - Friday 10 a.m. - 6 p.m.<br>
 					Saturday 11 a.m. - 5 p.m.<br>
-					Sunday by appointment</p>
+					Monday & Sunday by appointment</p>
 				</aside>
 			</aside>
 			<div class="clear"></div>

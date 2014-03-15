@@ -71,7 +71,6 @@ class AraderNavWidget extends WP_Widget
 		$after_widget = '</nav>';
 		?>
 		<?php echo $before_widget ?>
-		<?php echo $before_title . $title . $after_title ?>
 		<?php echo $body ?>
 		<?php echo $after_widget ?>
 		<?php 

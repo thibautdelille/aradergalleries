@@ -85,6 +85,7 @@ aside li a:active{color:#ab9265;}
 .feature a:hover{text-decoration:underline}
 
 .content-wrap{width:700px;float:right}
+.fullcontent-wrap{padding-top: 1px}
 .content-wrap .text{margin-top:20px}
 
 footer {background-color:#000;width:940px;margin:auto; padding:20px;}
@@ -133,10 +134,13 @@ footer aside li a:active{color:#ab9265;}
 .element a h6:hover, .element h6 a:hover{text-decoration:underline}
 .element a h5:hover, .element h5 a:hover{text-decoration:underline}
 .element a h5.hover{text-decoration:underline}
-.piece-wrap{margin-top:10px}
-.piece-wrap img{float:left}
-.piece-wrap .text{margin-left:480px}
 
+
+.fullcontent-wrap .piece-wrap{margin-top:10px}
+.fullcontent-wrap .piece-wrap .image{width: 700px}
+.fullcontent-wrap .piece-wrap img{width: 100%; float:left}
+.fullcontent-wrap .piece-wrap .text{float:left; width:220px; margin-left:20px}
+.fullcontent-wrap .elements-wrap {width: 960px;}
 .content{margin-top:20px}
 
 /* =Global
@@ -458,13 +462,15 @@ textarea {
 	.elements-wrap .thumb img{
 		width: auto;
 	}
-	.piece-wrap .image img {
+	.fullcontent-wrap .piece-wrap .image{width: 680px}
+	.fullcontent-wrap .piece-wrap .image img {
 		float: none;
 	}
-	.piece-wrap .text {
+	.fullcontent-wrap .piece-wrap .text {
 		margin-top: 20px;
 		margin-left: 0px;
 	}
+	.fullcontent-wrap .elements-wrap {width: 700px;}
 }
 /*
 @media only screen and (max-width: 720px){
