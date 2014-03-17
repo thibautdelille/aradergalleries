@@ -42,7 +42,7 @@ p a{color:#121299;text-decoration:underline}
 a.more:hover{text-decoration:underline}
 
 header {width:980px;padding:170px 18px 0px;padding-left:18px;height:140px;margin:auto;position:relative}
-header .logo{width:420px;height:60px;color:transparent;}
+header .logo{width:420px;height:60px;color:transparent;display:block;}
 header .logo img{width:100%;}
 header h5{width:420px;text-align:right;margin:0; font-weight:500}
 header nav {position:relative;width:100%;background:url("images/header_bg.jpg");height:61px;z-index:5;}

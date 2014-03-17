@@ -21,6 +21,7 @@
 			 		echo print_wp_cart_button_for_product(get_the_title(), $price);
 			 }
 			?>
+				<div class="entry-tag"><a href="/contact-us">Contact us</a> to learn more</div>
 
 				</div>
 				<div class="clear"></div>
