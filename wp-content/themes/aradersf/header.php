@@ -48,7 +48,7 @@
 
 <body <?php body_class(); ?>>
 	<header>
-		<div class="logo"><img src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="Arader Galleries Logo"></img></div>
+		<a class="logo" href="/"><img src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="Arader Galleries Logo"></img></a>
 		<h5>432 & 435 Jackson Street, San Francisco</h5>
 		<nav>
 			<?php wp_nav_menu( array( 'menu' => 'Header Menu' ) ); ?>
