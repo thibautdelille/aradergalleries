@@ -105,6 +105,7 @@ footer aside li a:active{color:#ab9265;}
 
 .hr{width:100%;height:1px;background-color:#ccc}
 .clear{clear:both}
+.right{float:right}
 
 .back{margin-top:7px;margin-bottom:6px}
 .back a{font-size:18px; color:#ccc;font-weight:500;font-style:italic;}
@@ -404,6 +405,44 @@ textarea {
 
 .shopping_cart {
 	font-size: 14px !important;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-size:24px;
+}
+
+.icon-list, 
+.icon-layout{
+	cursor:pointer;
+	color:#dddddd;
+}
+
+.icon-list:hover, 
+.icon-layout:hover{
+	color:#515151;
+}
+
+body.layout .icon-layout,
+body.layout .icon-layout:hover{
+	color:#000000;
+}
+
+body.list .icon-list,
+body.list .icon-list:hover{
+	color:#000000;
+}
+body.list .element.artists{
+	float:none;
+	width:auto;
+	height:auto;
+	text-align: left;
+}
+body.list .element.artists .thumb{
+	display:none;
+}
+
+body.list .element.artists .grey:hover{
+	color:#000000;
 }
 
 

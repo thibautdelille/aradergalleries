@@ -21,12 +21,6 @@ $(document).ready(function() {
 			});
 		//});
 	});
-	/*$('.piece-wrap .image img').each(function(){
-		var imgW = $(this).width();
-		var imgH = $(this).height();
-		$(this).attr('width', 460);
-		$(this).attr('height', imgH*$(this).width()/imgW);
-	});*/
 	$('#s').focus(function(){
 		if($(this).attr('value')==$(this).attr('defaultValue')){
 			$(this).attr('value', "");
@@ -38,6 +32,14 @@ $(document).ready(function() {
 			$(this).attr('value', $(this).attr('defaultValue'));
 		}
 	});
+
+	$('body').addClass('list');
+	$('.icon-layout').on('click', function(){
+		$('body').addClass('layout').removeClass('list');
+	})
+	$('.icon-list').on('click', function(){
+		$('body').addClass('list').removeClass('layout');
+	})
 });
 
 WebFontConfig = {
