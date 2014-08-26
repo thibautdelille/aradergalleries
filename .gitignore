@@ -12,3 +12,5 @@ wp-content/cache/
 wp-content/backups/
 sitemap.xml.gz
 wp-config.php
+wp-content/themes/aradergalleries/node_modules/
+wp-content/themes/aradergalleries/GruntFile.js
